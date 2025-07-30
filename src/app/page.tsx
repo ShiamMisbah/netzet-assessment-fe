@@ -8,7 +8,9 @@ const page = (props: Props) => {
   return (
     <div>
       <Header />
-      <Dashboard />
+      <div className="w-full bg-black">
+        <Dashboard />
+      </div>
     </div>
   );
 }

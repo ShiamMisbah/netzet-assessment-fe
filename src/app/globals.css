@@ -2,11 +2,13 @@
 
 :root {
   --font-heading: var(--font-urbanist);
+  --font-body: var(--font-figtree);
   --background: #ffffff;
   --foreground: #171717;
   --primaryRed: rgba(252, 0, 78, 1);
   --primaryIndigo: rgba(16, 203, 224, 1);
-  --textIndigo: rgba(0, 231, 249, 1)
+  --textIndigo: rgba(0, 231, 249, 1);
+  --textGray: rgba(171, 171, 171, 1);
 }
 
 @theme inline {
@@ -20,6 +22,11 @@
     --foreground: #ededed;
   }
 }
+
+/* html {
+  width: 390px;
+  margin: auto;
+} */
 
 body {
   background: var(--background);
