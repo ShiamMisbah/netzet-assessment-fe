@@ -2,9 +2,7 @@ import Dashboard from '@/component/Dashboard'
 import Header from '@/component/Header';
 import React from 'react'
 
-type Props = {}
-
-const page = (props: Props) => {
+const page = () => {
   return (
     <div>
       <Header />

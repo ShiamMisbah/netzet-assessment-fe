@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Figtree, Geist, Geist_Mono, Urbanist } from "next/font/google";
+import { Figtree, Urbanist } from "next/font/google";
 import "./globals.css";
 
 const urbanist = Urbanist({

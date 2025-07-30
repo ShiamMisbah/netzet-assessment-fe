@@ -4,9 +4,7 @@ import hero_img from '@/app/assets/hero_img.jpg'
 import Image from 'next/image'
 import { Menu } from 'lucide-react'
 
-type Props = {}
-
-const Dashboard = (props: Props) => {
+const Dashboard = () => {
   return (
     <div className=" px-5 md:px-20 py-4 pb-10 relative max-w-[1440px] mx-auto">
       <div className="relative flex justify-center items-center z-10">
@@ -71,7 +69,7 @@ const Dashboard = (props: Props) => {
         <div className="mt-6 text-center text-[var(--textGray)] max-w-[281px] mx-auto">
           <div className="text-[12px] mb-4" style={{ lineHeight: 1.2 }}>
             <h3>
-              By clicking "Get Started", you agree with Terms and Conditions,
+              By clicking &#34;Get Started&#34;, you agree with Terms and Conditions,
               Privacy Policy, Subscription Terms
             </h3>
           </div>

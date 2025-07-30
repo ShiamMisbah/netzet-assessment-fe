@@ -1,8 +1,6 @@
 import React from 'react'
 
-type Props = {}
-
-const Header = (props: Props) => {
+const Header = () => {
   return ( 
     <div className="relative w-full h-[76px] bg-linear-to-r from-[var(--primaryRed)] to-[var(--primaryIndigo)] flex justify-center items-center text-center z-10">
       <div
