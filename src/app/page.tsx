@@ -4,9 +4,9 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div>
+    <div className=''>
       <Header />
-      <div className="w-full bg-black">
+      <div className="w-full max-w-[1440px] mx-auto">
         <Dashboard />
       </div>
     </div>
