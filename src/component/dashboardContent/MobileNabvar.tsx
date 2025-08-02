@@ -13,9 +13,9 @@ const MobileNabvar = () => {
             height={46}
             src={main_logo.src}
         />
-        <div className="absolute lg:relative right-[6px] top-[10px] text-white cursor-pointer z-10">
+        <button className="absolute lg:relative right-[6px] top-[10px] text-white cursor-pointer z-10">
             <Menu />
-        </div>
+        </button>
     </div>
   )
 }
