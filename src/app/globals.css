@@ -3,8 +3,8 @@
 :root {
   --font-heading: var(--font-urbanist);
   --font-body: var(--font-figtree);
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #010206;
+  --foreground: #ededed;
   --primaryRed: rgba(252, 0, 78, 1);
   --primaryIndigo: rgba(16, 203, 224, 1);
   --textIndigo: rgba(0, 231, 249, 1);
@@ -18,7 +18,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #010206;
     --foreground: #ededed;
   }
 }
