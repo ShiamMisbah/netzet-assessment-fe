@@ -1,25 +1,40 @@
+"use client"
 import React from 'react'
-import main_logo from '@/app/assets/main_logo.png'
-import hero_img from '@/app/assets/hero_img.jpg'
-import Image from 'next/image'
+import useIsMobile from '@/utils/CheckIsMobile'
+import MainHeadline from './dashboardContent/MainHeadline'
+import BodyContent from './dashboardContent/BodyContent'
+import TermsAndConditions from './dashboardContent/TermsAndConditions'
+import CtaContent from './dashboardContent/CtaContent'
+import HeroImage from './dashboardContent/HeroImage'
+import MobileNabvar from './dashboardContent/MobileNabvar'
+import DesktopNavbar from './dashboardContent/DesktopNavbar'
 
-type Props = {}
-
-const Dashboard = (props: Props) => {
+const Dashboard = () => {
+  const isMobile = useIsMobile();  
   return (
-    <div className="bg-black px-5 py-4">
-      <div className="w-full flex justify-center">
-        <Image alt="main_logo" width={108} height={46} src={main_logo.src} />
+    <div className=" px-5 md:px-20 py-4 lg:py-8 pb-10 lg:pb-20 relative max-w-[1440px] mx-auto overflow-hidden">
+      <div className="lg:max-w-[1020px] md:mx-auto relative flex justify-center md:justify-between items-center md:items-start z-10">
+        {isMobile && <MobileNabvar />}
+        {!isMobile && <DesktopNavbar />}
       </div>
-      <div className="relative w-full lg:w-1/2 flex justify-center lg:flex-col">
-        <Image
-          alt="hero_logo"
-          src={hero_img}
-          width={500} // your desired width
-          height={0} // use style for height instead
-          style={{ height: "auto", width: "100%" }} // width 100% of parent, auto height
-          sizes="(max-width: 768px) 100vw, 500px"
-        />
+
+      <div className=" lg:ml-[136px] lg:flex-row-reverse xl:flex-row lg:flex">
+        <HeroImage />
+        <div className="relative w-full lg:w-[520px] -mt-22 lg:mt-[58px]">
+          <MainHeadline />
+          <BodyContent />
+          {isMobile ? (
+            <>
+              <TermsAndConditions />
+              <CtaContent />
+            </>
+          ) : (
+            <>
+              <CtaContent />
+              <TermsAndConditions />
+            </>
+          )}
+        </div>
       </div>
     </div>
   );

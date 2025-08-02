@@ -1,15 +1,13 @@
 import React from 'react'
 
-type Props = {}
-
-const Header = (props: Props) => {
-  return (
-    <div className="w-full h-[76px] bg-linear-to-r from-[var(--primaryRed)] to-[var(--primaryIndigo)] flex justify-center items-center text-center">
+const Header = () => {
+  return ( 
+    <div className="relative w-full mx-auto h-[76px] lg:h-[47px] bg-linear-to-r from-[var(--primaryRed)] to-[var(--primaryIndigo)] flex justify-center items-center text-center z-10">
       <div
-        className="max-w-[350px] lg:max-w-[882px] mx-auto"
+        className="max-w-[350px] lg:max-w-full "
         style={{ lineHeight: 1 }}
       >
-        <span className="text-[16px] lg:text-[22px] text-[var(--primaryIndigo)] font-extrabold">
+        <span className="text-[16px] lg:text-[23px] text-[var(--primaryIndigo)] font-extrabold">
           🚀 FRESH BEGINNINGS SALE:
         </span>{" "}
         <span className="text-white font-bold text-[14px] lg:text-[22px]">

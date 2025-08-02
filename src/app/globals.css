@@ -2,11 +2,13 @@
 
 :root {
   --font-heading: var(--font-urbanist);
-  --background: #ffffff;
-  --foreground: #171717;
+  --font-body: var(--font-figtree);
+  --background: #010206;
+  --foreground: #ededed;
   --primaryRed: rgba(252, 0, 78, 1);
   --primaryIndigo: rgba(16, 203, 224, 1);
-  --textIndigo: rgba(0, 231, 249, 1)
+  --textIndigo: rgba(0, 231, 249, 1);
+  --textGray: rgba(171, 171, 171, 1);
 }
 
 @theme inline {
@@ -16,10 +18,15 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #010206;
     --foreground: #ededed;
   }
 }
+
+/* html {
+  width: 390px;
+  margin: auto;
+} */
 
 body {
   background: var(--background);

@@ -2,13 +2,13 @@ import Dashboard from '@/component/Dashboard'
 import Header from '@/component/Header';
 import React from 'react'
 
-type Props = {}
-
-const page = (props: Props) => {
+const page = () => {
   return (
-    <div>
+    <div className=''>
       <Header />
-      <Dashboard />
+      <div className="w-full max-w-[1440px] mx-auto">
+        <Dashboard />
+      </div>
     </div>
   );
 }
