@@ -1,8 +1,6 @@
 import React from 'react'
 
-type Props = {}
-
-const TermsAndConditions = (props: Props) => {
+const TermsAndConditions = () => {
   return (
     <div className="mt-6 lg:mt-7 text-center lg:text-left text-[var(--textGray)] max-w-[281px] lg:max-w-full mx-auto lg:mx-0">
       <div className="text-[12px] mb-4 lg:mb-3" style={{ lineHeight: 1.2 }}>

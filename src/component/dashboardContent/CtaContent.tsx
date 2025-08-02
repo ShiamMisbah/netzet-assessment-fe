@@ -1,8 +1,6 @@
 import React from 'react'
 
-type Props = {}
-
-const CtaContent = (props: Props) => {
+const CtaContent = () => {
   return (
     <div className="mt-8 lg:mt-5">
       <div className="w-full max-w-[350px] lg:max-w-[310px] mx-auto lg:mx-0 ">

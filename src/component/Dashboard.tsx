@@ -1,8 +1,5 @@
 "use client"
 import React from 'react'
-import main_logo from '@/app/assets/main_logo.png'
-import hero_img from '@/app/assets/hero_img.jpg'
-import Image from 'next/image'
 import useIsMobile from '@/utils/CheckIsMobile'
 import MainHeadline from './dashboardContent/MainHeadline'
 import BodyContent from './dashboardContent/BodyContent'

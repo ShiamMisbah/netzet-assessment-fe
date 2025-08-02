@@ -1,8 +1,6 @@
 import React from 'react'
 
-type Props = {}
-
-const MainHeadline = (props: Props) => {
+const MainHeadline = () => {
   return (
     <div className="text-center lg:text-left">
       <div

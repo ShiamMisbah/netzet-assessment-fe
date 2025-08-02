@@ -1,11 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import { Menu } from "lucide-react";
 import main_logo from "@/app/assets/main_logo.png";
 
-type Props = {};
-
-const DesktopNavbar = (props: Props) => {
+const DesktopNavbar = () => {
   return (
     <>
       <Image

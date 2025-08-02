@@ -1,8 +1,6 @@
 import React from 'react'
 
-type Props = {}
-
-const BodyContent = (props: Props) => {
+const BodyContent = () => {
   return (
     <div className="text-white mt-6 lg:mt-4 flex flex-col gap-2">
       <li className="flex justify-start items-center gap-3 lg:gap-2.5 mb-1">

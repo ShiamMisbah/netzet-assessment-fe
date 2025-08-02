@@ -3,11 +3,7 @@ import React from 'react'
 import { Menu } from "lucide-react";
 import main_logo from "@/app/assets/main_logo.png";
 
-
-
-type Props = {}
-
-const MobileNabvar = (props: Props) => {
+const MobileNabvar = () => {
   return (
     <div>
         <Image
